@@ -1,3 +1,8 @@
+import beefsteak from "./images/beefsteak.png"
+import goulash from "./images/goulash.png"
+
+const images = { beefsteak, goulash };
+
 const createMenu= ()=>{
     const content = document.querySelector("#content");
     const menu = document.createElement("div");
@@ -33,7 +38,7 @@ const createMenuItem = (name, description) => {
     foodDescription.textContent = description;
 
     const foodImage = document.createElement("img");
-    foodImage.src = `images/${name.toLowerCase()}.png`;
+    foodImage.src = images[name.toLowerCase()];
     foodImage.alt = `${name}`;
 
     menuItem.appendChild(foodImage);

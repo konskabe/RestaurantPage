@@ -2,6 +2,7 @@ import loadPage from "./pageLoad.js"
 import { loadMenu } from "./pageLoad.js";
 import { loadContact } from "./pageLoad.js";
 import createRestaurantHomePage from "./restaurant.js";
+import "./style.css";
 
 loadPage();
 
